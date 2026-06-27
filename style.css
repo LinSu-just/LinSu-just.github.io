@@ -1,0 +1,28 @@
+/* Подключаем шрифт Onest */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap');
+
+/* Сбрасываем стандартные отступы браузера */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Основные настройки страницы */
+body{
+
+    background:#F5F0E6;
+
+    font-family:"Onest",sans-serif;
+
+    color:#4A4A45;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
