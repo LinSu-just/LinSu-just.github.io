@@ -28,28 +28,27 @@ a {
 
 .logo {
   position: relative;
-  width: 42px;
-  height: 42px;
+  display: block;
+  width: 44px;
+  height: 44px;
 
   font-family: 'Onest', sans-serif;
   font-weight: 500;
   color: #31403F;
-  letter-spacing: -3px;
 }
 
-.logo-d,
-.logo-s {
+.logo span {
   position: absolute;
   font-size: 34px;
   line-height: 1;
 }
 
-.logo-d {
+.logo span:first-child {
   left: 0;
   top: 0;
 }
 
-.logo-s {
+.logo span:last-child {
   left: 18px;
   top: 18px;
 }
@@ -87,7 +86,6 @@ a {
 .hero {
   width: min(1440px, calc(100% - 120px));
   margin: 0 auto;
-
   padding-top: 66px;
 
   display: grid;
@@ -130,7 +128,6 @@ h1 {
 
 .hero-buttons {
   margin-top: 48px;
-
   display: flex;
   gap: 24px;
 }
@@ -153,22 +150,21 @@ h1 {
 .primary {
   min-width: 330px;
   background: #31403F;
-  color: #fff;
+  color: #FFFFFF;
 }
 
-.primary span {
+.arrow {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 31px;
+  font-size: 30px;
   line-height: 1;
   transform: translateY(-2px);
-
   transition: transform 0.25s ease;
 }
 
-.primary:hover span {
+.primary:hover .arrow {
   transform: translate(6px, -2px);
 }
 
@@ -208,25 +204,9 @@ h1 {
   align-items: center;
   justify-content: flex-start;
 
+  font-size: 42px;
+  line-height: 1;
   color: #A87655;
-}
-
-.fact-icon svg {
-  width: 36px;
-  height: 36px;
-
-  fill: none !important;
-  stroke: currentColor !important;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.fact-icon svg path,
-.fact-icon svg circle,
-.fact-icon svg rect {
-  fill: none !important;
-  stroke: currentColor !important;
 }
 
 .fact h3 {
