@@ -8,6 +8,7 @@ body {
     background: #F6F0E5;
     font-family: 'Onest', sans-serif;
     color: #4D4943;
+    overflow-x: hidden;
 }
 
 a {
@@ -16,55 +17,57 @@ a {
 }
 
 .header {
-    max-width: 1400px;
+    width: min(1400px, calc(100% - 80px));
     margin: 0 auto;
-    padding: 40px 40px;
+    padding-top: 40px;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 42px;
     font-weight: 700;
+    line-height: 0.75;
     color: #31403F;
 }
 
 .logo span {
     display: block;
-    margin-top: -14px;
-    margin-left: 20px;
+    margin-left: 18px;
 }
 
 .nav {
     display: flex;
     gap: 48px;
-}
 
-.nav a {
     font-size: 20px;
     color: #31403F;
 }
 
 .resume-link {
-    color: #A87655;
     font-size: 20px;
+    color: #A87655;
     border-bottom: 1px solid #A87655;
 }
 
 .hero {
-    max-width: 1400px;
+    width: min(1400px, calc(100% - 80px));
     margin: 0 auto;
-    padding: 40px 40px 0;
+    padding-top: 80px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.hero-text h1 {
+.hero-left {
+    min-width: 0;
+}
+
+h1 {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 96px;
     line-height: 0.95;
@@ -93,8 +96,7 @@ a {
     gap: 24px;
 }
 
-.button-primary,
-.button-secondary {
+.btn {
     height: 54px;
     padding: 0 30px;
     border-radius: 999px;
@@ -102,30 +104,31 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 14px;
 
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 18px;
     font-weight: 700;
 }
 
-.button-primary {
+.primary {
     background: #31403F;
-    color: #FFFFFF;
+    color: white;
 }
 
-.button-secondary {
+.secondary {
     border: 1.5px solid #A87655;
     color: #A87655;
 }
 
-.hero-image {
+.hero-right {
     height: 620px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.hero-arch {
+.arch {
     width: 520px;
     height: 620px;
     border-radius: 260px 260px 0 0;
