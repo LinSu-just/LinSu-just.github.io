@@ -17,68 +17,87 @@ a {
 }
 
 .header {
-  width: min(1400px, calc(100% - 120px));
+  width: 100%;
+  max-width: 1680px;
   margin: 0 auto;
-  padding-top: 34px;
+  padding: 42px 64px 0;
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
 .logo {
+  position: relative;
+  width: 46px;
+  height: 48px;
+
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 31px;
   font-weight: 600;
-  line-height: 0.72;
   color: #31403F;
-  letter-spacing: -2px;
 }
 
-.logo span {
-  display: block;
-  margin-left: 18px;
+.logo-d {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.logo-s {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 35px;
+  line-height: 1;
 }
 
 .nav {
   display: flex;
-  gap: 52px;
-  padding-top: 7px;
+  gap: 54px;
+
+  padding-top: 6px;
   font-size: 18px;
   color: #31403F;
 }
 
 .resume-link {
-  padding-top: 7px;
+  padding-top: 6px;
   font-size: 18px;
   color: #A87655;
   border-bottom: 1px solid #A87655;
 }
 
 .hero {
-  width: min(1400px, calc(100% - 120px));
+  width: 100%;
+  max-width: 1680px;
   margin: 0 auto;
-  padding-top: 56px;
+
+  padding: 72px 64px 0;
+
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 54% 46%;
   align-items: end;
 }
 
 .hero-left {
-  padding-left: 28px;
-  padding-bottom: 36px;
+  padding-left: 48px;
+  padding-bottom: 48px;
 }
 
 h1 {
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 92px;
-  line-height: 0.94;
+  font-size: 96px;
+  line-height: 0.95;
   font-weight: 800;
   letter-spacing: -4px;
   color: #31403F;
 }
 
 .hero-subtitle {
-  margin-top: 28px;
+  margin-top: 30px;
+
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 30px;
   line-height: 1.2;
@@ -88,14 +107,15 @@ h1 {
 
 .hero-description {
   max-width: 690px;
-  margin-top: 26px;
+  margin-top: 28px;
+
   font-size: 24px;
   line-height: 1.46;
   color: #4D4943;
 }
 
 .hero-buttons {
-  margin-top: 48px;
+  margin-top: 50px;
   display: flex;
   gap: 24px;
 }
@@ -104,10 +124,12 @@ h1 {
   height: 52px;
   padding: 0 30px;
   border-radius: 999px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -139,7 +161,7 @@ h1 {
 }
 
 .facts {
-  margin-top: 68px;
+  margin-top: 70px;
   display: flex;
 }
 
@@ -157,13 +179,15 @@ h1 {
 .fact-icon {
   height: 42px;
   margin-bottom: 12px;
+
   font-size: 38px;
-  color: #A87655;
   line-height: 1;
+  color: #A87655;
 }
 
 .fact h3 {
   margin-bottom: 18px;
+
   font-size: 24px;
   line-height: 1;
   font-weight: 700;
@@ -178,19 +202,23 @@ h1 {
 
 .hero-right {
   position: relative;
-  height: 690px;
+  height: 720px;
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
   overflow: hidden;
 }
 
 .arch {
   position: absolute;
   bottom: 0;
-  width: 540px;
-  height: 660px;
-  border-radius: 270px 270px 0 0;
+
+  width: 565px;
+  height: 690px;
+
+  border-radius: 285px 285px 0 0;
   background: #3E5552;
   border: 2px solid #A87655;
 }
@@ -198,16 +226,23 @@ h1 {
 .arch::before {
   content: "";
   position: absolute;
-  inset: -16px -16px 0 -16px;
-  border-radius: 290px 290px 0 0;
+
+  left: -16px;
+  right: -16px;
+  top: -16px;
+  bottom: 0;
+
+  border-radius: 305px 305px 0 0;
   border: 2px solid #A87655;
 }
 
 .girl {
   position: relative;
   z-index: 2;
-  width: 560px;
-  max-height: 705px;
+
+  width: 575px;
+  max-height: 720px;
   object-fit: contain;
-  transform: translateY(0);
+
+  transform: translateY(18px);
 }
