@@ -20,7 +20,6 @@ a {
   width: min(1440px, calc(100% - 120px));
   margin: 0 auto;
   padding-top: 34px;
-
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -31,7 +30,6 @@ a {
   display: block;
   width: 44px;
   height: 44px;
-
   font-family: 'Onest', sans-serif;
   font-weight: 500;
   color: #31403F;
@@ -56,7 +54,6 @@ a {
 .nav {
   display: flex;
   gap: 54px;
-
   padding-top: 7px;
   font-size: 18px;
   color: #31403F;
@@ -87,7 +84,6 @@ a {
   width: min(1440px, calc(100% - 120px));
   margin: 0 auto;
   padding-top: 66px;
-
   display: grid;
   grid-template-columns: 55% 45%;
   align-items: end;
@@ -109,7 +105,6 @@ h1 {
 
 .hero-subtitle {
   margin-top: 28px;
-
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 30px;
   line-height: 1.2;
@@ -120,7 +115,6 @@ h1 {
 .hero-description {
   max-width: 690px;
   margin-top: 28px;
-
   font-size: 24px;
   line-height: 1.46;
   color: #4D4943;
@@ -136,12 +130,10 @@ h1 {
   height: 52px;
   padding: 0 30px;
   border-radius: 999px;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 22px;
-
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -157,7 +149,6 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   font-size: 30px;
   line-height: 1;
   transform: translateY(-2px);
@@ -179,7 +170,7 @@ h1 {
 }
 
 .facts {
-  margin-top: 70px;
+  margin-top: 88px;
   display: flex;
   align-items: flex-start;
 }
@@ -198,20 +189,17 @@ h1 {
 .fact-icon {
   width: 42px;
   height: 42px;
-  margin-bottom: 14px;
-
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1;
   color: #A87655;
 }
 
 .fact h3 {
   margin: 0 0 18px;
-
   font-size: 24px;
   line-height: 1;
   font-weight: 700;
@@ -220,7 +208,6 @@ h1 {
 
 .fact p {
   margin: 0;
-
   font-size: 18px;
   line-height: 1.55;
   color: #A87655;
@@ -228,22 +215,18 @@ h1 {
 
 .hero-right {
   position: relative;
-  height: 700px;
-
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-
   overflow: hidden;
 }
 
 .arch {
   position: absolute;
-  bottom: 0;
-
+  bottom: -70px;
   width: 560px;
   height: 675px;
-
   border-radius: 280px 280px 0 0;
   background: #3E5552;
   border: 2px solid #A87655;
@@ -252,12 +235,10 @@ h1 {
 .arch::before {
   content: "";
   position: absolute;
-
   left: -16px;
   right: -16px;
   top: -16px;
   bottom: 0;
-
   border-radius: 300px 300px 0 0;
   border: 2px solid #A87655;
 }
@@ -265,10 +246,8 @@ h1 {
 .girl {
   position: relative;
   z-index: 2;
-
   width: 570px;
   max-height: 705px;
   object-fit: contain;
-
-  transform: translateY(4px);
+  transform: translateY(82px);
 }
