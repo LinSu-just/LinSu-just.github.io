@@ -1,63 +1,33 @@
-/* ===========================
-   СБРОС СТИЛЕЙ
-=========================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+body {
+    background: #F5F0E6;
+    color: #45423E;
+    font-family: 'Onest', sans-serif;
+    min-height: 100vh;
 }
 
-body{
-
-    background:#F5F0E6;
-
-    color:#45423E;
-
-    font-family:'Onest',sans-serif;
-
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 300px;
 }
 
-/* ===========================
-   КОНТЕЙНЕР
-=========================== */
-
-.container{
-
-    width:1320px;
-
-    margin:0 auto;
-
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 96px;
+    line-height: 95%;
+    font-weight: 800;
+    color: #31403F;
 }
 
-/* ===========================
-   ПРОВЕРКА ШРИФТОВ
-=========================== */
-
-h1{
-
-    font-family:'Montserrat Alternates',sans-serif;
-
-    font-size:96px;
-
-    font-weight:800;
-
-    color:#314241;
-
-}
-
-p{
-
-    margin-top:20px;
-
-    font-size:24px;
-
-    line-height:150%;
-
-    font-weight:400;
-
+p {
+    margin-top: 24px;
+    font-family: 'Onest', sans-serif;
+    font-size: 24px;
+    line-height: 150%;
 }
