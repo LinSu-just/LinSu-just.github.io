@@ -20,7 +20,6 @@ a {
   width: min(1400px, calc(100% - 120px));
   margin: 0 auto;
   padding-top: 34px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +65,6 @@ a {
   width: min(1400px, calc(100% - 120px));
   margin: 0 auto;
   padding-top: 78px;
-
   display: grid;
   grid-template-columns: 56% 44%;
   align-items: end;
@@ -100,7 +98,6 @@ h1 {
   margin-top: 28px;
   font-size: 24px;
   line-height: 1.46;
-  color: #4D4943;
 }
 
 .hero-buttons {
@@ -113,12 +110,10 @@ h1 {
   height: 52px;
   padding: 0 28px;
   border-radius: 999px;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
-
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -189,7 +184,6 @@ h1 {
 .hero-right {
   position: relative;
   height: 720px;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -198,11 +192,9 @@ h1 {
 .arch {
   position: absolute;
   bottom: 0;
-
   width: 560px;
   height: 700px;
   border-radius: 280px 280px 0 0;
-
   background: #3E5552;
   border: 2px solid #A87655;
 }
@@ -218,7 +210,6 @@ h1 {
 .girl {
   position: relative;
   z-index: 2;
-
   width: 600px;
   max-height: 760px;
   object-fit: contain;
