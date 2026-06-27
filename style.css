@@ -169,48 +169,47 @@ h1 {
   background: rgba(168, 118, 85, 0.08);
 }
 
-.facts {
-  margin-top: 88px;
-  display: flex;
-  align-items: flex-start;
+.facts{
+    margin-top:90px;
+    display:flex;
+    gap:60px;
 }
 
-.fact {
-  width: 235px;
-  padding-right: 34px;
-  margin-right: 34px;
-  border-right: 1px solid #A87655;
+.fact{
+    flex:1;
+    position:relative;
+    padding-left:8px;
 }
 
-.fact:last-child {
-  border-right: none;
+.fact:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:-30px;
+    top:10px;
+    width:1px;
+    height:118px;
+    background:#C9A17C;
 }
 
-.fact-icon {
-  width: 42px;
-  height: 42px;
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 28px;
-  line-height: 1;
-  color: #A87655;
+.fact-icon{
+    font-size:34px;
+    color:#B07B55;
+    margin-bottom:18px;
+    line-height:1;
 }
 
-.fact h3 {
-  margin: 0 0 18px;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 700;
-  color: #31403F;
+.fact h3{
+    font-family:'Onest';
+    font-size:22px;
+    font-weight:700;
+    color:#31403F;
+    margin-bottom:18px;
 }
 
-.fact p {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.55;
-  color: #A87655;
+.fact p{
+    font-size:16px;
+    line-height:1.65;
+    color:#B07B55;
 }
 
 .hero-right {
