@@ -185,6 +185,7 @@ h1 {
 .facts {
   margin-top: 70px;
   display: flex;
+  align-items: flex-start;
 }
 
 .fact {
@@ -202,23 +203,34 @@ h1 {
   width: 42px;
   height: 42px;
   margin-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
   color: #A87655;
 }
 
 .fact-icon svg {
-  width: 42px;
-  height: 42px;
-  display: block;
+  width: 36px;
+  height: 36px;
 
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.9;
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
+.fact-icon svg path,
+.fact-icon svg circle,
+.fact-icon svg rect {
+  fill: none !important;
+  stroke: currentColor !important;
+}
+
 .fact h3 {
-  margin-bottom: 18px;
+  margin: 0 0 18px;
 
   font-size: 24px;
   line-height: 1;
@@ -227,6 +239,8 @@ h1 {
 }
 
 .fact p {
+  margin: 0;
+
   font-size: 18px;
   line-height: 1.55;
   color: #A87655;
