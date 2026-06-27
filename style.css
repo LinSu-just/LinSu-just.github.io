@@ -1,28 +1,63 @@
-/* Подключаем шрифт Onest */
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap');
+/* ===========================
+   СБРОС СТИЛЕЙ
+=========================== */
 
-/* Сбрасываем стандартные отступы браузера */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* Основные настройки страницы */
+html{
+    scroll-behavior:smooth;
+}
+
 body{
 
     background:#F5F0E6;
 
-    font-family:"Onest",sans-serif;
+    color:#45423E;
 
-    color:#4A4A45;
+    font-family:'Onest',sans-serif;
 
-    min-height:100vh;
+}
 
-    display:flex;
+/* ===========================
+   КОНТЕЙНЕР
+=========================== */
 
-    justify-content:center;
+.container{
 
-    align-items:center;
+    width:1320px;
+
+    margin:0 auto;
+
+}
+
+/* ===========================
+   ПРОВЕРКА ШРИФТОВ
+=========================== */
+
+h1{
+
+    font-family:'Montserrat Alternates',sans-serif;
+
+    font-size:96px;
+
+    font-weight:800;
+
+    color:#314241;
+
+}
+
+p{
+
+    margin-top:20px;
+
+    font-size:24px;
+
+    line-height:150%;
+
+    font-weight:400;
 
 }
