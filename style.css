@@ -73,3 +73,82 @@ body{
     color:#324242;
     border-color:#324242;
 }
+.hero {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 40px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 96px;
+    line-height: 0.95;
+    font-weight: 800;
+    color: #31403F;
+}
+
+.hero-subtitle {
+    margin-top: 28px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #A87655;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin-top: 28px;
+    font-size: 24px;
+    line-height: 1.45;
+    color: #4D4943;
+}
+
+.hero-buttons {
+    margin-top: 48px;
+    display: flex;
+    gap: 24px;
+}
+
+.button-primary,
+.button-secondary {
+    height: 54px;
+    padding: 0 30px;
+    border-radius: 999px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.button-primary {
+    background: #31403F;
+    color: #FFFFFF;
+}
+
+.button-secondary {
+    border: 1.5px solid #A87655;
+    color: #A87655;
+}
+
+.hero-image {
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-arch {
+    width: 520px;
+    height: 620px;
+    border-radius: 260px 260px 0 0;
+    background: #3E5552;
+    border: 2px solid #A87655;
+}
